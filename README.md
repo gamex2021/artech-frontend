@@ -50,7 +50,7 @@ This project is a portfolio web application showcasing AI projects. It uses Fast
 <pre> ```npm install``` </pre>
 
 3. Create a `.env` file in the frontend directory and add the backend URL:
-<pre> ```REACT_APP_API_URL=[http://localhost:8000](http://localhost:8000)``` </pre>
+<pre> ```REACT_APP_API_URL=http://localhost:8000``` </pre>
 
 ## Running the Application
 
