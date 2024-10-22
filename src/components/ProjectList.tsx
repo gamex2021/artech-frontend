@@ -16,6 +16,7 @@ export default function ProjectList() {
   const [projects, setProjects] = useState<Project[]>([]);
 
   // Fetch the project data when the component first renders
+  
   useEffect(() => {
     const fetchProjects = async () => {
       try {
