@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# AI Projects Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a portfolio web application showcasing AI projects. It uses FastAPI for the backend and React for the frontend.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+1. [Prerequisites](#prerequisites)
+2. [Backend Setup](#backend-setup)
+3. [Frontend Setup](#frontend-setup)
+4. [Running the Application](#running-the-application)
+5. [Deployment](#deployment)
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Python 3.7+
+- Node.js 12+
+- npm
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Backend Setup
 
-### `npm test`
+1. Navigate to the backend directory:
+<pre> ```cd backend ``` </pre>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Create a virtual environment:
+<pre> ```python -m venv venv ``` </pre>
 
-### `npm run build`
+3. Activate the virtual environment:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- On Windows:
+  ```
+  venv\Scripts\activate
+  ```
+- On macOS and Linux:
+  ```
+  source venv/bin/activate
+  ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Install the required packages:
+<pre> ```pip install fastapi uvicorn``` </pre>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Create a `requirements.txt` file:
+<pre> ```pip freeze > requirements.txt``` </pre>
 
-### `npm run eject`
+## Frontend Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Navigate to the frontend directory:
+<pre> ```cd frontend``` </pre>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install the required packages:
+<pre> ```npm install``` </pre>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Create a `.env` file in the frontend directory and add the backend URL:
+<pre> ```REACT_APP_API_URL=[http://localhost:8000](http://localhost:8000)``` </pre>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Running the Application
 
-## Learn More
+### Backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. From the backend directory, run:
+<pre> ```uvicorn main:app --reload``` </pre>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The backend server will be running on `http://localhost:8000`.
 
-### Code Splitting
+### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. From the frontend directory, run:
+<pre> ```npm start``` </pre>
 
-### Analyzing the Bundle Size
+The frontend application will be running on `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
