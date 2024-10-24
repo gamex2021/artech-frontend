@@ -50,7 +50,7 @@ const NavBar: React.FC = () => {
               )}
             </div>
           </div>
-          <div className="hidden sm:ml-6 sm:flex sm:items-center">
+          <div className=" sm:ml-6 flex sm:items-center">
             {isAuthenticated ? (
               <motion.button
                 whileHover={{ scale: 1.05 }}
