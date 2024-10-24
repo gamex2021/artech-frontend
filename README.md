@@ -68,4 +68,7 @@ The backend server will be running on `http://localhost:8000`.
 
 The frontend application will be running on `http://localhost:3000`.
 
+### Testing
+run npm test
+
 
