@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
             <div className="flex-shrink-0 flex items-center">
               <span className="text-lg font-semibold text-gray-800">Portfolio</span>
             </div>
-            <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <div className=" sm:ml-6 flex sm:space-x-8">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
